@@ -51,8 +51,8 @@ export async function registerRoutes(
         location: result.location || query,
         country: result.country || "Unknown",
         category: result.category || "General",
-        rules: Array.isArray(result.rules) ? result.rules.map((r: string) => r.length > 80 ? r.substring(0, 77) + "..." : r).slice(0, 3) : ["Respect the locals.", "Be polite.", "Enjoy the vibe."],
-        scam: result.scam ? (result.scam.length > 100 ? result.scam.substring(0, 97) + "..." : result.scam) : null,
+        rules: Array.isArray(result.rules) ? result.rules.slice(0, 3) : ["Respect the locals.", "Be polite.", "Enjoy the vibe."],
+        scam: result.scam || null,
         coordinates: result.coordinates || { lat: 0, lng: 0 }
       };
 

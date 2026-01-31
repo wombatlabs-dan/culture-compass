@@ -18,7 +18,9 @@ export function NotificationBubble({
   index 
 }: NotificationBubbleProps) {
   
+  const [isExpanded, setIsExpanded] = useState(false);
   const isAlert = type === "alert";
+  const isLongMessage = message.length > 80;
 
   return (
     <motion.div
@@ -62,9 +64,25 @@ export function NotificationBubble({
               {timeOffset}
             </span>
           </div>
-          <p className="text-[14px] leading-tight font-medium opacity-95 break-words">
-            {message}
-          </p>
+          <div className="flex flex-col">
+            <p className={cn(
+              "text-[14px] leading-tight font-medium opacity-95 break-words",
+              !isExpanded && isLongMessage && "line-clamp-2"
+            )}>
+              {message}
+            </p>
+            {isLongMessage && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsExpanded(!isExpanded);
+                }}
+                className="text-[11px] font-bold mt-1 text-left opacity-70 hover:opacity-100 transition-opacity uppercase tracking-tighter"
+              >
+                {isExpanded ? "Show Less" : "Read More"}
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </motion.div>
