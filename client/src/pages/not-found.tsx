@@ -1,21 +1,23 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle } from "lucide-react";
+import { Link } from "wouter";
+import { AlertTriangle } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
-      <Card className="w-full max-w-md mx-4">
-        <CardContent className="pt-6">
-          <div className="flex mb-4 gap-2">
-            <AlertCircle className="h-8 w-8 text-red-500" />
-            <h1 className="text-2xl font-bold text-gray-900">404 Page Not Found</h1>
-          </div>
+    <div className="min-h-screen w-full flex items-center justify-center bg-black text-white p-4">
+      <div className="glass-panel rounded-3xl p-8 max-w-sm w-full text-center">
+        <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-6 text-red-500">
+          <AlertTriangle className="w-8 h-8" />
+        </div>
+        
+        <h1 className="text-2xl font-bold font-display mb-2">Signal Lost</h1>
+        <p className="text-white/60 mb-8">
+          The vibe you are looking for has faded into the ether.
+        </p>
 
-          <p className="mt-4 text-sm text-gray-600">
-            Did you forget to add the page to the router?
-          </p>
-        </CardContent>
-      </Card>
+        <Link href="/" className="block w-full py-4 bg-white text-black font-bold rounded-xl hover:bg-white/90 transition-colors">
+          Return to Lock Screen
+        </Link>
+      </div>
     </div>
   );
 }
