@@ -21,10 +21,12 @@ export function NotificationBubble({
   
   const [isExpanded, setIsExpanded] = useState(false);
   const isAlert = type === "alert";
-  const isLongMessage = message.length > 80;
+  // Reduced threshold to 50 characters to ensure "Read More" appears for most real messages
+  const isLongMessage = message.length > 50;
 
   return (
     <motion.div
+      layout
       initial={{ opacity: 0, scale: 0.9, y: 20 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.2 } }}
@@ -35,11 +37,11 @@ export function NotificationBubble({
         delay: index * 0.15 
       }}
       className={cn(
-        "relative w-full max-w-sm mx-auto mb-3 overflow-hidden rounded-[20px] p-4 backdrop-blur-xl border shadow-lg transition-all select-none cursor-default group hover:scale-[1.02]",
+        "relative w-full max-w-sm mx-auto mb-3 rounded-[20px] p-4 backdrop-blur-xl border shadow-lg transition-all select-none cursor-default group hover:scale-[1.01]",
         isAlert 
           ? "bg-red-500/20 border-red-500/30 text-red-50 hover:bg-red-500/25" 
           : "bg-white/10 border-white/20 text-white hover:bg-white/15",
-        "min-h-[80px] h-auto"
+        "min-h-[80px] h-auto overflow-visible"
       )}
     >
       <div className="flex items-start gap-3 h-full">
@@ -75,12 +77,13 @@ export function NotificationBubble({
             {isLongMessage && (
               <button
                 onClick={(e) => {
+                  e.preventDefault();
                   e.stopPropagation();
                   setIsExpanded(!isExpanded);
                 }}
-                className="text-[11px] font-bold mt-1 text-left opacity-70 hover:opacity-100 transition-opacity uppercase tracking-tighter"
+                className="text-[11px] font-bold mt-2 text-left text-primary/90 hover:text-primary transition-colors uppercase tracking-tight underline underline-offset-2"
               >
-                {isExpanded ? "Show Less" : "Read More"}
+                {isExpanded ? "Show Less" : "Read Full Rule"}
               </button>
             )}
           </div>
