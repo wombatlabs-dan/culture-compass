@@ -63,7 +63,7 @@ export default function Home() {
                    animate={{ opacity: 1, y: 0 }}
                    className="w-full mb-2"
                 >
-                  <div className="text-xs uppercase tracking-widest text-white/50 font-bold mb-2 pl-2">
+                  <div className="text-xs uppercase tracking-widest text-white font-bold mb-2 pl-2 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] bg-black/20 backdrop-blur-sm py-1 px-3 rounded-full inline-block border border-white/10">
                     {data.location} • {data.category}
                   </div>
                 </motion.div>
