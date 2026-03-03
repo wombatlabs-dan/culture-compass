@@ -1,0 +1,4 @@
+name = "culture-compass"
+pages_build_output_dir = "dist/public"
+compatibility_date = "2025-03-01"
+compatibility_flags = ["nodejs_compat"]
