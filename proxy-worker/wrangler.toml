@@ -1,0 +1,7 @@
+name = "culture-compass-proxy"
+main = "worker.ts"
+compatibility_date = "2025-03-01"
+
+[[routes]]
+pattern = "wombatlabs.ai/culture-compass*"
+zone_id = "f7f014412f3375fe56af30e54ae56b2b"
