@@ -2,7 +2,9 @@
 
 > **AI-powered cultural etiquette intelligence** — know the unwritten rules before you land.
 
-**🏆 Hackathon Winner** — built and shipped in a single hackathon sprint.
+**🏆 Hackathon Winner** — [New Founder School × Fractal AI Hackathon](https://lu.ma/new-founder-school-ai-hackathon-with-fra), San Francisco · January 31, 2026
+
+**[→ Try it live at wombatlabs.ai/culture-compass](https://wombatlabs.ai/culture-compass)**
 
 ---
 
@@ -49,7 +51,7 @@ See [HACKATHON.md](./HACKATHON.md) for the full story — including the ideation
 | State / Data | TanStack Query (React Query v5) |
 | Routing | Wouter |
 | Build | Vite (client) + esbuild (server) |
-| Platform | Replit (Node 20 + PostgreSQL 16) |
+| Hosting | [wombatlabs.ai/culture-compass](https://wombatlabs.ai/culture-compass) |
 
 ---
 
@@ -150,12 +152,6 @@ If you're evaluating this as a portfolio piece or post-hackathon review:
 - **The AI integration** goes well beyond a basic API call: multimodal (text + voice + image), streaming via SSE, concurrent batch processing with retry/backoff, and conversation memory
 - **The architecture** is production-shaped: shared type-safe schemas, clean separation of client/server/shared, database persistence, proper error handling
 - **Screenshots** — if you'd like to see the UI in action, reach out or see the demo below
-
----
-
-## Screenshots
-
-> *Screenshots coming — if you're looking at this before they're added, see the "What it does" section above for a description of the UI, or run it locally.*
 
 ---
 
