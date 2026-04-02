@@ -2,6 +2,8 @@
 
 This document is the complete ideation record for Culture Compass: the actual prompts, the AI-generated research, and the decisions made before a single line of code was written. It's here because the methodology that produced a winning idea is as interesting as the product itself.
 
+**The event:** [New Founder School AI Hackathon with Fractal](https://lu.ma/new-founder-school-ai-hackathon-with-fra) — January 31, 2026 · Frontier Tower, 995 Market Street, San Francisco. A one-day hackathon for non-technical founders: build an AI app, get it demo-ready, pitch to judges. 150 in-person participants, Demo Day judging at 4pm, prizes valued at ~$5,000. Culture Compass won.
+
 Most hackathon teams spend 80% of their time arguing about what to build. This project used a structured 7-step framework to compress that into a focused session — and it produced a winner.
 
 ---
