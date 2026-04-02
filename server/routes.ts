@@ -33,7 +33,7 @@ export async function registerRoutes(
       `;
 
       const response = await openai.chat.completions.create({
-        model: "gpt-5.2",
+        model: "gpt-4o",
         messages: [
           { role: "system", content: "You are VibeCheck, a cultural etiquette guide. You only speak JSON." },
           { role: "user", content: prompt }
