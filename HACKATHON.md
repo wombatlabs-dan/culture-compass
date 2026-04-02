@@ -1,126 +1,257 @@
 # Culture Compass — Hackathon Story
 
-This document covers how Culture Compass came to exist: the ideation methodology used to pick the idea, the one-pager that went into the build session, and what made it win.
+This document is the complete ideation record for Culture Compass: the actual prompts, the AI-generated research, and the decisions made before a single line of code was written. It's here because the methodology that produced a winning idea is as interesting as the product itself.
 
-Most hackathon teams spend 80% of their time arguing about what to build. This project used a structured framework to compress that into a focused process — and it worked.
+Most hackathon teams spend 80% of their time arguing about what to build. This project used a structured 7-step framework to compress that into a focused session — and it produced a winner.
 
 ---
 
-## The Ideation Methodology
+## The Ideation Framework
 
-Before writing a single line of code, the idea went through a 7-step validation framework designed for hackathons. The goal: avoid building something technically impressive but commercially incoherent. The framework asks the questions that judges ask — *does this solve a real problem, for a real person, in a way that's meaningfully better than what exists?*
+The framework runs in 7 sequential steps. Each step takes an input, produces a concrete output, and feeds the next step. The goal: move from vague interests to a buildable, pitchable, well-researched idea in one session.
 
-### Step 1 — Problem Discovery
+The steps are: Problem Discovery → Idea Clarification → Market Signal Research → Competitive Analysis → Market Sizing → One-Pager PRD → Build-Ready PRD.
 
-The starting point was a simple question: what do frequent travelers, expats, and business professionals consistently struggle with that digital tools haven't solved well?
+---
 
-The answer surfaced fast: **cultural intelligence**. Not "what to see" or "where to eat" — but the unwritten social rules that determine whether you make a good impression or an embarrassing one. The problem is real, recurring, and emotionally significant. People genuinely worry about inadvertently offending hosts, colleagues, or strangers in unfamiliar cultures.
+## Step 1 — Problem Discovery
 
-**Problem framing:**
-- **Who has it?** Business travelers, expats, digital nomads, and curious tourists — roughly anyone preparing for a trip to an unfamiliar culture
-- **Urgency:** 8/10 — the stakes feel real (professional reputation, relationships, genuine embarrassment)
-- **Current solution:** Scattered blog posts, outdated guidebooks, asking friends, hoping for the best
+**The prompt:**
 
-### Step 2 — Idea Clarification
+> I'm at a hackathon and need to identify a problem worth solving.
+>
+> My interests/expertise: Travel, learning languages, exploring cultures
+> Industries I care about: Travel, Hospitality, Education
+>
+> Generate 3 specific problems that real people complain about regularly, have existing solutions that are clunky or outdated, and could be solved with a simple digital tool. For each: who has this problem, how urgent is it, what do they currently do?
 
-**One-sentence pitch:** *"A conversational AI that gives you a cultural briefing for any city — covering the social norms, etiquette traps, and unwritten rules that guidebooks miss."*
+**What came back:** Three options. The one that stuck:
 
-**The #1 pain point:** Existing resources are static, generic, and not conversational. You can't ask a blog post a follow-up question. You can't say "okay, but what about in a formal business dinner context?" and get a useful answer.
+> **The Hyper-Local Language "Cheat Sheet"** — Language apps like Duolingo teach general fluency, but travelers need *survival fluency* for specific contexts (ordering at a non-tourist tapas bar in Seville, navigating a pharmacy in Tokyo). Culturally conscious travelers who want to avoid being "the loud tourist" currently use Google Translate mid-conversation (awkward) or carry bulky phrasebooks that aren't context-specific.
 
-**Target customer:** Professionals 28–45, frequent travelers, work in globally distributed companies or consulting. They're on LinkedIn. They read The Economist. They've had an awkward cultural moment on a trip and still think about it. They would pay $10–15/month for a tool that reliably saved them from those moments.
+This wasn't the final product — it was the seed. The insight about *contextual survival knowledge* rather than general language learning pointed toward something bigger: not just phrases, but the full set of unwritten social rules.
 
-**Search behavior:** "etiquette guide [city]", "business customs in [country]", "what not to do in [country]", "is it rude to [action] in [culture]"
+---
 
-### Step 3 — Market Signal Research
+## Step 2 — Idea Clarification ("ELI 10")
 
-The proof that this problem is real and underserved:
+Starting from the language cheat sheet concept, the idea evolved: what if instead of just phrases, it covered the full cultural *vibe* of a place? The prompt pushed for ruthless clarity:
 
-- **Reddit:** r/travel, r/expats, and r/digitalnomad have thousands of posts asking "what should I know before visiting X?" — the top answers are always anecdotal and incomplete. Users regularly complain that guidebook etiquette sections are too vague.
-- **App store reviews of travel apps:** 1-star reviews of competitors frequently cite "too surface-level," "nothing I didn't already know," and "doesn't answer follow-up questions."
-- **Google Trends:** Searches for "[city] etiquette" and "cultural norms [country]" show consistent, evergreen search volume with spikes before major holidays and events.
-- **Quora:** "What are things I should know before visiting Japan/India/Germany/etc." questions consistently attract hundreds of upvotes and dozens of answers — none of them definitive.
+**The prompt:**
 
-The signal: people want this information, they search for it repeatedly, and no single source satisfies them.
+> I'm building a location-aware "Cultural Vibe-Check" tool. It uses GPS to detect you're at a Shinto Shrine or a Parisian café and pushes a 3-bullet "Cheat Sheet" to your lock screen: 1. No photos inside. 2. Bow slightly. 3. Quiet voices.
+>
+> Describe this in one sentence a 10-year-old would understand. What's the #1 pain point? Who specifically would pay for this? What would they search on Google?
 
-### Step 4 — Competitive Landscape
+**The responses that shaped everything:**
 
-| Competitor | Core offering | Key complaint |
+**One-sentence pitch:**
+> "It's like a secret guardian angel for your phone that whispers the local rules so you never accidentally act like a rude tourist."
+
+**The #1 pain point — named precisely:**
+> The "Scorn of the Local." The deep-seated anxiety of being The Ugly Tourist. People are terrified of getting "The Look" from a Parisian waiter, being scolded in a Japanese temple, or accidentally disrespecting a sacred space and having it go viral for the wrong reasons. The product solves the *frozen-moment indecision*: "Do I bow? Do I tip? Can I take this photo?"
+
+**Who pays:**
+- **The "Luxury Learner" (B2C):** Ages 35–60, high disposable income, traveling to high-context cultures (Japan, Middle East, Southeast Asia). Values authentic travel but is terrified of being disrespectful. Hangs out on FlyerTalk, luxury travel Facebook groups, Condé Nast Traveler.
+- **The Boutique Travel Advisor (B2B):** Independent travel planners charging $500+ for custom itineraries. Would buy a pro license to give clients as a value-add.
+
+**What they search:**
+- *"Is it rude to tip in Japan restaurants"*
+- *"What to wear to a mosque in Dubai"*
+- *"Parisian cafe etiquette for Americans"*
+- *"How to not be an annoying tourist in Italy"*
+
+---
+
+## Step 3 — Market Signal Research
+
+**The prompt:**
+
+> Show me 3 Reddit threads, tweets, or forum posts where people complain about this exact problem. What hashtags are people using? Are there products that partially solve this — and what do their 1-star reviews say?
+
+**The proof-of-pain that came back:**
+
+Three real community signals:
+
+- **r/solotravel:** *"I am so tired of Americans being everywhere, speaking at twice the volume... the rules for polite and rude are different here."* — The anxiety of being perceived as rude is universal among self-aware travelers.
+- **r/relationships:** A user accidentally offended a Japanese friend over a basic cultural question. Even well-meaning curiosity can cause offense without the right context.
+- **r/travel:** The Istanbul shoe-shine scam. *"She is the nicest person I know... he ended up grabbing her wallet."* — Polite people are the easiest targets. The product needs a scam-shield layer.
+
+**Competitor 1-star failures:**
+
+| Product | Core Offering | 1-Star Complaint |
 |---|---|---|
-| Lonely Planet / guidebooks | Static printed/ebook etiquette sections | Outdated, too generic, no interactivity |
-| TripAdvisor / travel blogs | User-generated tips | Inconsistent quality, hard to search |
-| Duolingo / language apps | Language learning, some cultural notes | Surface-level cultural content, language-first |
-| ChatGPT (direct) | General knowledge including cultural info | No focused UX, no persistence, no voice |
-| Culture Smart books | Deep-dive cultural guides | Book format only, slow to update, expensive |
+| Culture Trip | Content + bookings | "It's just a travel agency now. Too many ads, not enough actual culture tips." |
+| GlobeTips | Tipping guide app | "Data is 3 years old. Told me 15% for the US — that gets you yelled at now." |
+| Culture Smart Books | Deep-dive country guides | "Way too long to read at a restaurant. Geared toward businessmen, not tourists." |
 
-**The gap nobody is filling:** A focused, conversational, multimodal experience purpose-built for cultural intelligence. ChatGPT can answer these questions, but it's not designed for this use case — no city-specific UX, no voice interface, no search history, no visual context.
-
-**The single differentiator to win on:** Conversational depth. The ability to ask follow-ups, get contextual answers, and hear the briefing rather than just read it.
-
-### Step 5 — Market Sizing
-
-- **TAM:** ~100M international travelers from the US annually + ~9M Americans living abroad. Globally, 1.4B international tourist arrivals per year.
-- **Current spend:** Business travelers average $1,000–$5,000 per trip; cultural prep tools represent a tiny fraction of that budget. The willingness-to-pay signal from premium guidebook sales ($25–$40/book) suggests $10–15/month SaaS is credible.
-- **Is the problem growing?** Yes. Remote work has accelerated cross-cultural professional interactions. Digital nomadism is mainstream. AI has made conversational interfaces expected, not novel.
-- **Hackathon-scale opportunity:** Even at 0.1% of the addressable market, the opportunity is in the tens of millions annually. For a hackathon, the more important signal is: the problem is real, the solution is demonstrable, and the tech is compelling.
+**The white space:** All competitors are static (books) or clunky (manual searching). The gap is proactivity — the tool shouldn't wait for the user to search; it should push the answer before they need to ask.
 
 ---
 
-## The One-Pager
+## Step 3a — The High-Stakes Pivot
 
-*This is the document that went into the build session.*
+During the research step, a second angle emerged that changed the business model entirely:
 
----
+**The question that opened it:**
 
-**Culture Compass**
+> Could this also protect people from being filmed doing something culturally insensitive and having it go viral? Especially high-net-worth individuals, politicians, and celebrities?
 
-**The Problem**
+**The answer that reshaped the pitch:**
 
-Travelers, expats, and business professionals regularly encounter cultural situations they're unprepared for — not because they didn't care, but because the information they needed didn't exist in a useful form. Guidebooks are generic and outdated. Blog posts are shallow. Asking locals is awkward. There's no good way to get a real-time, conversational, contextually-aware cultural briefing before you need one.
+For a regular traveler, a cultural gaffe is embarrassing. For a CEO, politician, or influencer, it's a **PR disaster, a stock-price dip, or a cancellation event.**
 
-**The Solution**
+This led to a VIP tier concept:
 
-An AI-powered cultural intelligence app. Enter a destination city, get a deep-dive vibe check covering greetings, dining, business norms, taboo topics, dress, and social subtleties — delivered conversationally, with voice, and with visual context. Ask follow-ups. Get real answers.
+| Feature | Regular User | VIP / HNWI Version |
+|---|---|---|
+| Alert type | "Bow slightly" | "Reputation Red Zone" alerts |
+| Privacy mode | Standard GPS | Privacy-first geofencing (offline) |
+| Social guard | Etiquette tips | "No-Photo Zones" for taboo areas |
+| Scam alerts | General warnings | Real-time threat intelligence |
 
-**Target Customer**
+**The 30-second elevator pitch that came out of this step:**
 
-Business travelers and expats, 28–45. Globally mobile, professionally conscious, already comfortable with AI tools. They've had an awkward cross-cultural moment and would pay to avoid the next one.
-
-**Market Evidence**
-
-Thousands of Reddit threads asking "what should I know before visiting X?" — none with a satisfying answer. Consistent Google search volume for "[city] etiquette." 1-star reviews of travel apps citing lack of depth and interactivity.
-
-**Competitive Landscape**
-
-Guidebooks (static), travel blogs (shallow), ChatGPT (unfocused). Nobody has built a purpose-designed conversational UX for this use case.
-
-**Market Opportunity**
-
-100M+ US international travelers annually. $10–15/month willingness to pay (anchored to guidebook pricing). Growing market driven by remote work and digital nomadism.
-
-**The Big Bet**
-
-Conversational depth + multimodal delivery (voice + image + text) creates an experience that static content fundamentally cannot replicate.
+> "Most travelers are one accidental hand gesture away from a viral PR disaster.
+>
+> We're building **VibeCheck**, a location-aware 'cultural guardian angel.' Using GPS, it pushes 3-bullet-point etiquette cheat sheets directly to your lock screen the moment you walk into a sensitive area — like a Shinto Shrine or a Parisian café.
+>
+> For the average tourist, it eliminates the anxiety of being 'the rude American.' But for our high-stakes users — politicians, CEOs, and influencers — VibeCheck is **reputation insurance**. It prevents the one culturally insensitive photo that can end a brand deal or cause a diplomatic incident.
+>
+> We're not just providing travel tips; we're providing a **social safety net for a world that's always filming.**"
 
 ---
 
-## What made it win
+## Step 4 — Competitive Analysis
 
-A few things stood out to judges, based on feedback:
+**The prompt:**
 
-**1. The idea was focused.** It wasn't a generic "AI assistant for travelers." It was a specific tool for a specific high-value moment: preparing for cultural immersion. Focused ideas win hackathons because they're easier to demo and easier to evaluate.
+> List 5 existing solutions people use today. What's the gap nobody is filling? If I could only be better at ONE thing than all of these, what should it be?
 
-**2. The demo was experiential.** Typing a city name and watching a glassmorphic UI stream a culturally-aware briefing — while an AI-generated image of that city renders alongside it — is a compelling demo moment. The voice interface added another layer. Judges could feel what the product was.
+**The competitive map:**
 
-**3. The tech went beyond the obvious.** Most hackathon projects do a POST to the OpenAI API and call it AI. Culture Compass used multimodal AI (text + voice + image), real-time streaming, persistent conversation memory, and a proper database layer. That depth showed in the code review.
+| Solution | Core Offering | The Failure |
+|---|---|---|
+| Culture Smart Books | 200-page country deep dives | Too slow; requires homework before the trip |
+| GlobeTips (App) | Tipping calculator for 200 countries | Outdated data; misses current norms |
+| Culture Trip (App) | "Top 10" lists + cultural articles | Became a booking engine; lost the culture focus |
+| Reddit (r/travel) | Crowd-sourced real-time advice | Conflicting opinions; more confusing than helpful |
+| Google Maps / TripAdvisor | Location + reviews | Tells you *where* the temple is, nothing about *how to behave* inside it |
 
-**4. The idea came from research, not instinct.** The structured ideation process meant the team could articulate *why* this problem mattered, *who* it was for, and *what* made the solution better than existing options. That fluency in the business case impressed judges who were used to teams that could explain the code but not the market.
+**The gap — named precisely:**
+
+> The market has Pre-Trip Education (books/Reddit) and Post-Trip Reviews (TripAdvisor). **The gap is the "In-The-Moment" Guardrail.** There is no digital tool that bridges the 10 seconds between "walking through the door" and "making a mistake."
+
+**The single winning differentiator:**
+
+> **Contextual Proactivity.** If the user has to unlock their phone, open an app, and type "how to bow in Japan," you've already lost. By the time they find the answer, the interaction is over. The winning edge is "Zero-Click Knowledge" — information that finds the user, not the other way around.
+
+---
+
+## Step 5 — Market Sizing
+
+**The prompt:**
+
+> How many people in the US have this problem? How much do they currently spend solving it? What would they pay for a better solution? Is this a growing problem?
+
+**The numbers:**
+
+- **TAM:** ~85 million Americans traveling internationally annually
+- **Target segment:** ~33 million "Anxious Travelers" (39% of travelers who actively worry about cultural perception)
+- **High-stakes segment:** ~24 million US millionaires and public figures for whom reputation insurance is a real line item
+
+**Current spend (what they already pay to solve this badly):**
+- Time: 10–20 hours per trip researching customs, scams, and dress codes
+- Money (B2C): $50–100/trip on guidebooks, language subscriptions, cultural tours
+- Money (B2B): Corporations spend thousands on cultural sensitivity training; a single PR crisis firm charges $10K+ retainers
+
+**Willingness to pay:**
+- Casual traveler: $4.99 "Destination Pass" or $29/year
+- VIP/Corporate: $499/year "Executive Shield" tier
+
+**Growth direction:** Accelerating. Three reasons:
+1. The always-on camera culture means the social cost of a gaffe has never been higher
+2. Overtourism backlash (Kyoto, Venice, Barcelona) means locals are increasingly hostile to "ignorant" tourists
+3. The rise of immersive/slow travel requires deeper cultural precision than tourism ever did before
+
+**The killer stat for the pitch:**
+> "39% of US travelers are afraid of being 'The Ugly American.' In 2026, that's a 33-million-person market looking for a social safety net."
+
+---
+
+## Step 6 — The One-Pager PRD
+
+*The document that went into the build session:*
+
+---
+
+### 🌍 Project: VibeCheck — *Your Cultural Guardian Angel*
+
+**The Vision:** Eliminate social gaffes and reputation risk for travelers through proactive, location-aware etiquette intelligence.
+
+**The Core Pain Point:** The frozen-moment indecision of "Do I bow? Do I tip? Can I take this photo?" — and the deeper fear of being The Ugly Tourist, or for high-profile users, becoming The Viral Clip.
+
+**Why current solutions fail:**
+
+| Solution | The Fail Factor |
+|---|---|
+| Guidebooks | Too slow; requires pre-trip homework |
+| Google Search | Reactive — by the time you search, the moment is over |
+| Social media | Conflicting, cluttered, non-localized |
+
+**The offering:** Just-In-Time Intelligence. VibeCheck fills the 10-second gap between arriving somewhere and making a social mistake.
+
+**Core MVP features:**
+1. Geofenced triggers — GPS detects location type (Religious, Dining, Transit, Social)
+2. Lock-screen cheat sheet — 3-bullet notification pushed automatically
+3. Scam Shield — real-time warnings for known tourist-area scams
+
+**Market:**
+- 85M Americans traveling internationally / year
+- 33M in the "Anxious Traveler" segment (the TAM that actually pays)
+- 24M US millionaires as the high-ticket VIP tier
+
+**Monetization:**
+- B2C: $4.99 Destination Pass / $29/year "Unlimited Vibes"
+- B2B: $499/year "Executive Shield" for celebrity management and executive protection firms
+
+---
+
+## Step 7 — The Build-Ready PRD (for Replit)
+
+This is the prompt that went directly into Replit Agent to start building. It shows how the ideation session translated cleanly into technical requirements:
+
+---
+
+**The Replit Agent master prompt:**
+
+> I want to build a mobile-first web prototype for an app called **VibeCheck**.
+>
+> **The Core Concept:** A location-aware tool that tells travelers how to behave in specific cultural contexts.
+>
+> **Key Features to Build:**
+>
+> 1. **Simulator Mode:** Since this is a browser demo, create a search bar where I can type a location (e.g., "Senso-ji Temple" or "A Paris Café"). Use the OpenAI API to get the cultural vibe for that place.
+> 2. **The Vibe Engine:** Use the OpenAI API to generate 3 short, punchy etiquette rules (max 10 words each) based on that specific location and culture.
+> 3. **The UI:** Design the interface to look like a smartphone. When a location is "detected," show a notification bubble on a mock "Lock Screen" that displays the 3 rules. Use Tailwind CSS for a clean, premium aesthetic.
+> 4. **Scam Alert:** If the location is a famous tourist landmark, add a small red alert icon with a one-sentence warning about a common local scam.
+>
+> **Technical Stack:** React frontend, Node.js/Express backend, PostgreSQL for history, OpenAI API for the vibe engine.
+
+**What Replit Agent built from this:** The full-stack TypeScript application in this repo — React + Express + PostgreSQL + OpenAI multimodal integration — plus voice and image capabilities that emerged naturally from the Replit environment's tooling.
+
+The project shipped in a single hackathon session and won.
 
 ---
 
 ## The methodology, open-sourced
 
-The ideation framework used to pick this idea is now available as a reusable prompt-based tool: the **[hackathon-ideation skill](https://github.com/wombatlabs-dan/culture-compass)**. It walks through all 7 steps — problem discovery, idea clarification, market signal research, competitive landscape, market sizing, one-pager, and PRD — as an interactive coaching session.
+The 7-step framework used here is now available as a reusable coaching tool. If you're going into a hackathon and want to run this process yourself, the prompts are above — use them sequentially, and don't skip steps 3 and 4. The competitive analysis and market signal research are where most teams cut corners, and they're the steps that make judges believe you've actually validated the idea.
 
-The core insight behind the framework: **the difference between hackathon projects that win and ones that don't usually isn't the code — it's the clarity of the idea.** Teams that can explain the problem, the customer, and the competitive advantage in 60 seconds win. Teams that can only explain the tech don't.
+The framework is also the basis for the [hackathon-ideation skill](https://wombatlabs.ai) at WombatLabs — a structured AI coaching session that walks teams through all 7 steps interactively.
 
-If you're going into a hackathon and want to use this framework, it's available at [wombatlabs.ai](mailto:dan@wombatlabs.ai).
+**The core lesson from this project:** The difference between hackathon projects that win and ones that don't usually isn't the code. It's the clarity of the idea. Teams that can explain the problem, the customer, and the competitive advantage in 60 seconds win. Teams that can only explain the tech don't.
+
+---
+
+*Built by [Dan Harrison](https://github.com/wombatlabs-dan) · [dan@wombatlabs.ai](mailto:dan@wombatlabs.ai)*
