@@ -6,8 +6,7 @@
 
 ---
 
-<!-- SCREENSHOT PLACEHOLDER — see notes at bottom of README -->
-<!-- ![Culture Compass UI](./docs/screenshot.png) -->
+![Culture Compass — Kyoto Temple vibe check on desktop](./docs/screenshot.png)
 
 ---
 
