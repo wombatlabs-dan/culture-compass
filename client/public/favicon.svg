@@ -1,0 +1,55 @@
+<svg width="32" height="32" viewBox="0 0 8 7" xmlns="http://www.w3.org/2000/svg">
+  <!-- Row 1 -->
+  <circle cx="1.5" cy="0.5" r="0.4" fill="#111" />
+  <circle cx="2.5" cy="0.5" r="0.4" fill="#111" />
+  <circle cx="5.5" cy="0.5" r="0.4" fill="#111" />
+  <circle cx="6.5" cy="0.5" r="0.4" fill="#111" />
+  
+  <!-- Row 2 -->
+  <circle cx="0.5" cy="1.5" r="0.4" fill="#111" />
+  <circle cx="1.5" cy="1.5" r="0.4" fill="#111" />
+  <circle cx="2.5" cy="1.5" r="0.4" fill="#111" />
+  <circle cx="3.5" cy="1.5" r="0.4" fill="#111" />
+  <circle cx="4.5" cy="1.5" r="0.4" fill="#111" />
+  <circle cx="5.5" cy="1.5" r="0.4" fill="#111" />
+  <circle cx="6.5" cy="1.5" r="0.4" fill="#111" />
+  <circle cx="7.5" cy="1.5" r="0.4" fill="#111" />
+
+  <!-- Row 3 -->
+  <circle cx="0.5" cy="2.5" r="0.4" fill="#111" />
+  <circle cx="1.5" cy="2.5" r="0.35" fill="white" stroke="#111" stroke-width="0.1" />
+  <circle cx="2.5" cy="2.5" r="0.4" fill="#111" />
+  <circle cx="3.5" cy="2.5" r="0.4" fill="#111" />
+  <circle cx="4.5" cy="2.5" r="0.4" fill="#111" />
+  <circle cx="5.5" cy="2.5" r="0.4" fill="#111" />
+  <circle cx="6.5" cy="2.5" r="0.35" fill="white" stroke="#111" stroke-width="0.1" />
+  <circle cx="7.5" cy="2.5" r="0.4" fill="#111" />
+
+  <!-- Row 4 -->
+  <circle cx="0.5" cy="3.5" r="0.4" fill="#111" />
+  <circle cx="1.5" cy="3.5" r="0.4" fill="#111" />
+  <circle cx="2.5" cy="3.5" r="0.4" fill="#111" />
+  <circle cx="3.5" cy="3.5" r="0.4" fill="#111" />
+  <circle cx="4.5" cy="3.5" r="0.4" fill="#111" />
+  <circle cx="5.5" cy="3.5" r="0.4" fill="#111" />
+  <circle cx="6.5" cy="3.5" r="0.4" fill="#111" />
+  <circle cx="7.5" cy="3.5" r="0.4" fill="#111" />
+
+  <!-- Row 5 -->
+  <circle cx="0.5" cy="4.5" r="0.4" fill="#111" />
+  <circle cx="1.5" cy="4.5" r="0.4" fill="#111" />
+  <circle cx="2.5" cy="4.5" r="0.4" fill="#111" />
+  <circle cx="3.5" cy="4.5" r="0.4" fill="#d92d00" />
+  <circle cx="4.5" cy="4.5" r="0.4" fill="#d92d00" />
+  <circle cx="5.5" cy="4.5" r="0.4" fill="#111" />
+  <circle cx="6.5" cy="4.5" r="0.4" fill="#111" />
+  <circle cx="7.5" cy="4.5" r="0.4" fill="#111" />
+
+  <!-- Row 6 -->
+  <circle cx="1.5" cy="5.5" r="0.4" fill="#111" />
+  <circle cx="2.5" cy="5.5" r="0.4" fill="#111" />
+  <circle cx="3.5" cy="5.5" r="0.4" fill="#111" />
+  <circle cx="4.5" cy="5.5" r="0.4" fill="#111" />
+  <circle cx="5.5" cy="5.5" r="0.4" fill="#111" />
+  <circle cx="6.5" cy="5.5" r="0.4" fill="#111" />
+</svg>
